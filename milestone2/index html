@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <Title> Top 10 Best Story Games</Title>
-    </head>
-    <body> </body>
-    <header></header>
-    <nav></nav>
+   <Title>Playastorygame.com</Title>
+</head>
+    <body>  
+   <header>
+<h1>Playastorygame.com</h1>
+    <nav> <a href="index.html">Home</a>&nbsp;
+    <a href="competion.html">Competiontion</a>&nbsp;
+<a href="audience.html">Audience </a>
+</nav>
+    <h2>Start gaming at its full potential</h2>
+    <h2> Website summary: </h2>
+    <h4>What content will the site contain?</h4>
+        <p>This site will help you find the best story game for you based off of your intrests</p>
+   <h4>Where will you get all of the content for your site (ie. images & text)?</h4>
+   <p>I May use some game screenshots from google and also make my own I may also add my own music and sound effects</p>
+   <h4>Why should users care about the focus of the site?</h4>
+    <p>Some people want a new fresh experience in gaming and they may want to make sure they will enjoy it before they buy it</p>
+    <h4>Why should a site be built for this?</h4>
+    <p>To make an easier and less tedious process for searching for games</p>
+    <h4>What would you like users to do at your site?</h4>
+    <p> They will follow a series of questions and use other games and movies they like to match with the best story game that fits their preferences</p>
+    <h4>What is the goal of the site?</h4>
+    <p>To encourage more pople to indulge in the world of story-driven games</p>
+    </header>
+    
+
+    </nav>
     <main></main>
-    <footer></footer>
+    <footer>
+    <h6>Copyright &copy; 2026</h6>    
+    </footer>
+</body>
