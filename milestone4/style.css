@@ -1,6 +1,4 @@
-
-/* Basic styles */
-* {
+{
     box-sizing: border-box;
 }
 
@@ -11,7 +9,7 @@ body {
     color: #2d2040;
 }
 
-/* Required CSS Grid */
+
 .page-grid {
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
@@ -19,7 +17,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
+
 .header {
     grid-column: 2 / 8;
     grid-row: 1;
@@ -28,7 +26,7 @@ body {
     padding: 10px;
 }
 
-/* Navigation */
+
 .navigation {
     grid-column: 2 / 8;
     grid-row: 2;
@@ -44,7 +42,7 @@ body {
     gap: 10px;
 }
 
-/* Controller banner */
+
 .banner {
     grid-column: 2 / 8;
     grid-row: 3;
@@ -53,7 +51,7 @@ body {
     padding: 20px;
 }
 
-/* Featured games heading */
+
 .featured {
     grid-column: 2 / 8;
     grid-row: 4;
@@ -62,7 +60,7 @@ body {
     padding: 10px;
 }
 
-/* Main content wrapper */
+
 .main-content {
     grid-column: 2 / 8;
     grid-row: 5;
@@ -71,7 +69,7 @@ body {
     gap: 0;
 }
 
-/* Each game row */
+
 .game-row {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -79,7 +77,7 @@ body {
     padding: 10px 0;
 }
 
-/* First game image and description */
+
 .game-image-one {
     grid-column: 1 / 4;
     min-height: 200px;
@@ -94,7 +92,7 @@ body {
     padding: 10px;
 }
 
-/* Second game description and image */
+
 .game-text-two {
     grid-column: 1 / 4;
     min-height: 200px;
@@ -109,7 +107,7 @@ body {
     padding: 10px;
 }
 
-/* Closing message and button */
+
 .closing {
     grid-column: 2 / 8;
     grid-row: 6;
@@ -127,7 +125,7 @@ body {
     border-radius: 30px;
 }
 
-/* Footer */
+
 .footer {
     grid-column: 2 / 8;
     grid-row: 7;
@@ -136,7 +134,7 @@ body {
     padding: 10px;
 }
 
-/* Phone layout */
+
 @media (max-width: 600px) {
     .page-grid {
         grid-template-columns: minmax(0px, 1fr);
