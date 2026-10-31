@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     align-content: start;
 }
-.header {
+.headerclass {
     grid-column: 2 / 8;
     grid-row: 1;
 
@@ -28,11 +28,11 @@ body {
     padding: 10px;
     background-color: rgba(0, 119, 255, 0.4);
 }
-.header h1 {
+.headerclass h1 {
     margin: 0;
     font-size: 24px;
 }
-.navigation {
+.navclass {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -47,7 +47,7 @@ body {
 .navigation a:hover {
     color: #7209b7;
 }
-.banner{
+.bannerclass{
     grid-column: 2 / 8;
     grid-row: 2;
     min-height: 140px;
@@ -100,7 +100,7 @@ body {
     background-color: rgba(0, 255, 0, 0.4);
     padding: 15px;
 }
-.bottom-section {
+.find-yours-now {
     grid-column: 2 / 8;
     grid-row: 5;
     min-height: 150px;
@@ -115,7 +115,7 @@ body {
     padding: 12px 30px;
     border-radius: 30px;
 }
-.footer {
+.watermark {
     grid-column: 2 / 8;
     grid-row: 6;
     min-height: 60px;
