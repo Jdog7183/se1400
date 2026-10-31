@@ -1,15 +1,12 @@
 {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f7f3fc;
     color: #2d2040;
 }
-
-
 .page-grid {
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
@@ -17,8 +14,6 @@ body {
     min-height: 100vh;
     align-content: start;
 }
-
-
 .header {
     grid-column: 2 / 8;
     grid-row: 1;
@@ -33,13 +28,10 @@ body {
     padding: 10px;
     background-color: rgba(0, 119, 255, 0.4);
 }
-
 .header h1 {
     margin: 0;
     font-size: 24px;
 }
-
-
 .navigation {
     display: flex;
     align-items: center;
@@ -47,27 +39,21 @@ body {
     flex-wrap: wrap;
     gap: 18px;
 }
-
 .navigation a {
     color: #2d2040;
     text-decoration: none;
     font-weight: bold;
 }
-
 .navigation a:hover {
     color: #7209b7;
 }
-
-
-.website-banner{
+.banner{
     grid-column: 2 / 8;
     grid-row: 2;
     min-height: 140px;
     background-color: rgba(255, 80, 80, 0.4);
     padding: 20px;
 }
-
-
 .featured-section{
     grid-column: 2 / 8;
     grid-row: 3;
@@ -75,9 +61,7 @@ body {
     background-color: rgba(230, 255, 0, 0.45);
     padding: 10px;
 }
-
-
-.main-content {
+.featured-content {
     grid-column: 2 / 8;
     grid-row: 4;
 
@@ -85,48 +69,38 @@ body {
     grid-template-columns: minmax(0, 1fr);
     gap: 0;
 }
-
-
-.game-row-one,
-.game-row-two {
+.game-info-one,
+.game-info-two {
     display: grid;
-    grid-template-columns: reapeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 15px;
     margin-bottom: 20px;
 }
-
-
-.game-image-one {
+.game-picture-one {
     grid-column: 1 / 4;
     min-height: 200px;
     background-color: rgba(0, 255, 0, 0.4);
     padding: 10px;
 }
-
-.game-text-one {
+.game-description-one {
     grid-column: 4 / 7;
     min-height: 200px;
     background-color: rgba(0, 255, 0, 0.4);
     padding: 10px;
 }
-
-
-.game-text-two {
+.game-description-two {
     grid-column: 1 / 4;
     min-height: 200px;
     background-color: rgba(0, 255, 0, 0.4);
     padding: 10px;
 }
-
-.game-image-two {
+.game-picture-two {
     grid-column: 4 / 7;
     min-height: 200px;
     background-color: rgba(0, 255, 0, 0.4);
-    padding: 10px;
+    padding: 15px;
 }
-
-
-.closing {
+.bottom-section {
     grid-column: 2 / 8;
     grid-row: 5;
     min-height: 150px;
@@ -134,7 +108,6 @@ body {
     padding: 20px;
     text-align: center;
 }
-
 .button-placeholder {
     display: inline-block;
     background-color: #7209b7;
@@ -142,8 +115,6 @@ body {
     padding: 12px 30px;
     border-radius: 30px;
 }
-
-
 .footer {
     grid-column: 2 / 8;
     grid-row: 6;
@@ -151,74 +122,63 @@ body {
     background-color: rgba(155, 93, 229, 0.4);
     padding: 10px;
 }
-
-
 @media (max-width: 600px) {
     .page-grid {
         grid-template-columns: minmax(0px, 1fr);
     }
 
-    .header,
-    .banner,
-    .featured,
-    .main-content,
-    .closing,
-    .footer {
+.banner,
+.header,
+.featured,
+.featured-content,
+.bottom-section,
+.footer {
         grid-column: 1;
     }
-
-    .header {
+.header {
         grid-row: 1;
         justify-content: center;
         text-align: center;
     }
-
-    .header h1 {
+.header h1 {
         font-size: 22px;
     }
-
-    .navigation {
+.navigation {
         justify-content: center;
         gap: 12px;
     }
-
-    .banner {
+.banner {
         grid-row: 2;
     }
-
-    .featured {
+.featured {
         grid-row: 3;
     }
-
-    .main-content {
+.featured-content {
         grid-row: 4;
     }
-
-    .closing {
+.closing {
         grid-row: 5;
     }
-
-    .footer {
+.watermark {
         grid-row: 6;
+        background-color: rgba(155, 93, 229, 0.4)
     }
-
-    
-    .game-row-one,
-.game-row-two {
+.game-info-one,
+.game-info-two {
     display: grid;
-    grid-template-columns: reapeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 15px;
     margin-bottom: 20px;
+    min-width: 0;
 }
-
-    .game-image-one,
-    .game-text-one,
-    .game-text-two,
-    .game-image-two {
-        grid-column: span 3;
-        min-width:0;
-        min: height 200px;
-        padding: 15px;
-        background-color: rgba(red)
+.game-picture-one,
+.game-description-one,
+.game-description-two,
+.game-picture-two {
+    grid-column: span 3;
+     min-width:0;
+    min-height 200px;
+    padding: 15px;
+    background-color: rgba(0, 255, 0, 0.4)
     }
 }
