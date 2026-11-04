@@ -1,0 +1,218 @@
+ head {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #241638;
+    color: #ffffff;
+}
+.page-grid {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    gap: 0;
+    min-height: 100vh;
+    align-content: start;
+    width: 100%
+}
+.headerclass {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 20px;
+    min-height: 80px;
+    padding: 8px 12px;
+    background-color: rgba(75, 8, 120, 0.65);
+    z-index: 2;
+}
+.headerclass img { display: block;
+    width: 220px;
+    height: auto;
+}
+.headerclass h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.navclass {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-left: auto;
+}
+.navclass a {
+    color: #2d2040;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navclass a:hover {
+    color: #7209b7;
+}
+.bannerclass {
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    height: 250px;
+    width: 100%
+    padding: 0
+    margin: 0
+    overflow: hidden;
+    z-index: 1;
+}
+.bannerclass img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.featured-section {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    min-height: 100px;
+    background-color: #241638;
+    padding: 10px;
+    border-bottom: 4px solid #8000a8
+}
+.featured-content {
+    grid-column: 2 / 8;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    row-gap: 0;
+}
+.game-info-one,
+.game-info-two {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    margin: 0;
+    background-color:#241638;
+}
+.game-picture-one {
+    grid-column: 1 / 4;
+    min-width: 0;
+    height: 250px;
+    background-color: #241638;
+    padding: 8px;
+    overflow: hidden;
+}
+    .game-picture-one img { 
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.game-description-one {
+    grid-column: 4 / 7;
+    min-height: 200px;
+    background-color: #241638
+    padding: 10px;
+}
+.game-description-two {
+    grid-column: 1 / 4;
+    min-height: 200px;
+    background-color: #241638
+    padding: 10px;
+}
+.game-picture-two {
+    grid-column: 4 / 7;
+    min-width: 0;
+    height: 250px;
+    padding: 8px;
+    overflow: hidden;
+    background-color: #241638;
+}
+.game-picture-two img {
+    display: block
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.find-yours-now {
+    grid-column: 2 / 8;
+    grid-row: 5;
+    min-height: 150px;
+    background-color: rgba(230, 255, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+.button-placeholder {
+    display: inline-block;
+    background-color: #7209b7;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+.watermark {
+    grid-column: 2 / 8;
+    grid-row: 6;
+    min-height: 60px;
+    background-color: rgba(155, 93, 229, 0.4);
+    padding: 10px;
+}
+@media (max-width: 600px) 
+    .page-grid {
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    }
+}
+.headerclass,
+.bannerclass,
+.page-grid,
+.featured-content,
+.find-yours-now,
+.watermark {
+        grid-column: 1;
+    }
+.headerclass {
+        grid-row: 1;
+        justify-content: center;
+        text-align: center;
+    }
+.bannerclass {
+        grid-row: 2;
+    }
+.headerclass h1 {
+        font-size: 22px;
+    }
+.navclass {
+        justify-content: center;
+        gap: 12px;
+    }
+    
+.featured-section {
+        grid-row: 3;
+    }
+.featured-content {
+        grid-row: 4;
+    }
+.find-yours-now {
+        grid-row: 5;
+        background-color:#241638
+    }
+.watermark {
+        grid-row: 6;
+        background-color: #4b0878
+    }
+.game-info-one,
+.game-info-two {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+    min-width: 0;
+}
+.game-picture-one,
+.game-description-one,
+.game-description-two,
+.game-picture-two {
+    grid-column: span 3;
+     min-width:0;
+    min-height 200px;
+    padding: 15px;
+    background-color: #241638
+    margin: 0;
+}
