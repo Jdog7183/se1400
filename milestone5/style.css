@@ -8,11 +8,13 @@ html, body {
     font-family: Arial, sans-serif;
     background-color: #241638;
     color: #ffffff;
+    font-size: 16px
+    line-height: 1.5;
 }
 .page-grid {
     display: grid;
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-    grid-template-rows: auto auto auto 1fr auto auto
+    grid-template-rows: auto auto auto 1fr auto auto;
     gap: 0;
     min-height: 100vh;
     width: 100%;
@@ -40,6 +42,7 @@ html, body {
     height: auto;
 }
 .headerclass h1 {
+    font-size: 32px;
     margin: 0;
     font-size: 24px;
 }
@@ -216,7 +219,7 @@ html, body {
         grid-row: 2;
     }
 .headerclass h1 {
-        font-size: 22px;
+        font-size: 32px;
     }
 .navclass {
         justify-content: center;
@@ -244,6 +247,7 @@ html, body {
     gap: 15px;
     margin-bottom: 20px;
     min-width: 0;
+    font-size: 18px;
 }
 .game-picture-one,
 .game-description-one,
