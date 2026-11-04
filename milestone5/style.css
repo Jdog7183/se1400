@@ -140,7 +140,7 @@ html, body {
     min-height: 200px;
     background-color: #241638;
     padding: 10px;
-    font-size: large;
+    font-size: x-large;
 }
 .game-description-one h2 {-webkit-text-stroke: 0.5px #008cff;
 }
@@ -151,7 +151,7 @@ html, body {
     min-height: 200px;
     background-color: #241638;
     padding: 10px;
-    font-size: large;
+    font-size: x-large;
 }
 .game-description-two h2 {-webkit-text-stroke: 0.5px #008cff
 }
