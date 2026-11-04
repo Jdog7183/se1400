@@ -182,8 +182,8 @@ html, body {
     display: inline-block;
     background-color: #7209b7;
     color: white;
-    padding: 12px 30px;
-    border-radius: 30px;
+    padding: 20px 50px;
+    border-radius: 200px;
     
 }
 .button-placeholder:hover {background-color: #008cff;}
