@@ -1,5 +1,4 @@
-* {
-    box-sizing: border-box;
+*{ box-sizing: border-box;
 }
 html, body {
     margin: 0;
@@ -13,14 +12,13 @@ html, body {
 }
 .page-grid {
     display: grid;
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-    grid-template-rows: auto auto auto 1fr auto auto;
-    gap: 0;
-    min-height: 100vh;
-    width: 100%;
+grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+grid-template-rows: auto auto auto 1fr auto auto;
+gap: 0;
+min-height: 100vh;
+width: 100%
 }
-.page-grid a {
-    -webkit-text-stroke: 0.3px #000000;
+.page-grid a {-webkit-text-stroke: 0.3px #000000;
 }
 .headerclass {
     grid-column: 1 / -1;
@@ -28,15 +26,16 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: nowwrap;
     width: 100%;
     gap: 20px;
     min-height: 80px;
     padding: 8px 12px;
     background-color: rgba(75, 8, 120, 0.65);
-    z-index: 2; 
+    z-index: 2;
     border-bottom: 2px solid #ffffff;
 }
+
 .headerclass img { display: block;
     width: 220px;
     height: auto;
@@ -52,7 +51,6 @@ html, body {
     justify-content: flex-end;
     gap: 25px;
     margin-left: auto;
-   
 }
 .navclass a {
     color: #008cff;
@@ -62,15 +60,10 @@ html, body {
     text-shadow: 2px 2px 2px #000000;
     -webkit-text-stroke: 0;
 }
-.navclass a.start {color: #ffffff;
-}
-
 .navclass a:hover {
     color: #ffffff;
-    
 }
-.navclass a.start:hover {color:#008cff}
-
+.navclass a.start:hover {color: #008cff}
 .bannerclass {
     grid-column: 1 / -1;
     grid-row: 1 / 3;
@@ -81,13 +74,13 @@ html, body {
     overflow: hidden;
     z-index: 1;
     border-bottom: 3px solid #ffffff;
+
 }
 .bannerclass img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 .featured-section {
     grid-column: 1 / -1;
@@ -95,15 +88,15 @@ html, body {
     min-height: 100px;
     background-color: #241638;
     padding: 10px;
-    border-bottom: 4px solid #8000a8
+    border-bottom: 4px solid #8000a8;
 }
 .featured-section h2,
 .featured-section p {
     color: #ffffff;
     -webkit-text-stroke: 0.5px #008cff;
-}
 
-    .featured-content {
+}
+.featured-content {
     grid-column: 1 / -1;
     grid-row: 4;
     display: grid;
@@ -117,7 +110,7 @@ html, body {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 15px;
     margin: 0;
-    background-color:#241638;
+    background-color: #241638
 }
 .game-picture-one {
     grid-column: 1 / 4;
@@ -127,24 +120,17 @@ html, body {
     padding: 8px;
     overflow: hidden;
 }
-    .game-picture-one img { 
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        box-shadow: 5px 5px 5px #000000;
-        border-bottom: 10px solid #8000a8
+.game-picture-one img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px #000000;
+    border-bottom: 10px solid #8000a8
 }
-.game-description-one {
-    grid-column: 4 / 7;
-    min-height: 200px;
-    background-color: #241638;
-    padding: 10px;
-    font-size: x-large;
+.game-desrciption-one p {-webkit-text-stroke: 0.3px #000000;
 }
-.game-description-one h2 {-webkit-text-stroke: 0.5px #008cff;
-}
-.game-description-one p {-webkit-text-stroke: 0.3px #000000;
+.game-desrciption-one h2 {-webkit-text-stroke: 0.5px #008cff;
 }
 .game-description-two {
     grid-column: 1 / 4;
@@ -153,16 +139,15 @@ html, body {
     padding: 10px;
     font-size: x-large;
 }
-.game-description-two h2 {-webkit-text-stroke: 0.5px #008cff
+.game-descritpion-two h2 {-webkit-text-stroke: 0.5px #008cff
 }
-.game-description-two p {-webkit-text-stroke: 0.3px #000000 }
+.game-descrition-two p {-webkit-text-stroke: 0.3px #000000}
 .game-picture-two {
     grid-column: 4 / 7;
     min-width: 0;
     height: 250px;
-    padding: 8px;
-    overflow: hidden;
-    background-color: #241638;
+    padding: 10px;
+    font-size: x-large;
 }
 .game-picture-two img {
     display: block;
@@ -179,15 +164,15 @@ html, body {
     background-color: #241638;
     padding: 20px;
     text-align: center;
-    }
-    .find-yours-now h2{-webkit-text-stroke: 0.5px #008cff}
+}
+.find-yours-now h2 {-webkit-text-stroke: 0.5px #008cff
+}
 .button-placeholder {
     display: inline-block;
     background-color: #7209b7;
     color: white;
     padding: 20px 50px;
     border-radius: 200px;
-    
 }
 .button-placeholder:hover {background-color: #008cff;}
 
@@ -195,69 +180,6 @@ html, body {
     grid-column: 1 / -1;
     grid-row: 6;
     min-height: 60px;
-    background-color: rgba(155, 93, 229, 0.4);
+    background-color: rgba (155, 93, 229, 0.4);
     padding: 10px;
-}
-@media (max-width: 600px) {
-    .page-grid {
-        grid-template-columns: minmax(0px, 1fr);
-}
-.headerclass, 
-.bannerclass,
-.page-grid,
-.featured-content,
-.find-yours-now,
-.watermark {
-        grid-column: 1;
-    }  
-.headerclass {
-        grid-row: 1;
-        justify-content: center;
-        text-align: center;
-    }
-.bannerclass {
-        grid-row: 2;
-    }
-.headerclass h1 {
-        font-size: 32px;
-    }
-.navclass {
-        justify-content: center;
-        gap: 12px;
-    }
-    
-.featured-section {
-        grid-row: 3;
-    }
-.featured-content {
-        grid-row: 4;
-    }
-.find-yours-now {
-        grid-row: 5;
-        background-color:#241638
-    }
-.watermark {
-        grid-row: 6;
-        background-color: #4b0878
-    }
-.game-info-one,
-.game-info-two {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 15px;
-    margin-bottom: 20px;
-    min-width: 0;
-    font-size: 18px;
-}
-.game-picture-one,
-.game-description-one,
-.game-description-two,
-.game-picture-two {
-    grid-column: 1;
-     min-width:0;
-    min-height: 200px;
-    padding: 15px;
-    background-color: #241638;
-    margin: 0;
-}
 }
