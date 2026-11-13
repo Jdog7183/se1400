@@ -1,194 +1,286 @@
-* { box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
+
 html, body {
     margin: 0;
     width: 100%;
     overflow-x: hidden;
     font-family: Arial, sans-serif;
-    background-color: #241638;
+    background-color: #101827;
     color: #ffffff;
     font-size: 16px;
     line-height: 1.5;
 }
+
 .page-grid {
     display: grid;
-grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
-grid-template-rows: auto auto auto 1fr auto auto;
-gap: 0;
-min-height: 100vh;
-width: 100%
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax (0, 175px)) minmax(0px, 1fr);
+    grid-template-rows: auto;
+    gap: 0;
+    min-height: 100vh;
+    width: 100%;
 }
-.page-grid a {-webkit-text-stroke: 0.3px #000000;
-}
+
 .headerclass {
     grid-column: 1 / -1;
-    grid-row: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowwrap;
+    flex-wrap: nowrap;
     width: 100%;
-    gap: 20px;
-    min-height: 80px;
-    padding: 8px 12px;
-    background-color: rgba(75, 8, 120, 0.65);
-    z-index: 2;
+    min-height: 75px;
+    padding: 10px 20px;
+    background-color: #1D3557;
     border-bottom: 2px solid #ffffff;
 }
 
-.headerclass img { display: block;
+.headerclass img {
+    display: block;
     width: 220px;
-    height: auto;
+    height: auto
 }
-.headerclass h1 {
-    font-size: 32px;
-    margin: 0;
-    font-size: 24px;
-}
+
 .navclass {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 25px;
-    margin-left: auto;
 }
+
 .navclass a {
     color: #008cff;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     text-shadow: 2px 2px 2px #000000;
-    -webkit-text-stroke: 0;
 }
-.navclass a.start {color: #ffffff;
+.navclass a.start {
+    color: #ffffff
 }
-
 .navclass a:hover {
     color: #ffffff;
 }
-.navclass a.start:hover {color: #008cff
+.navclass a.start:hover {
+    color: #008cff;
 }
-
 .bannerclass {
-    grid-column: 1 / -1;
-    grid-row: 1 / 3;
-    height: 250px;
+    grid-column: 1/ -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    min-height: 420px;
     width: 100%;
-    padding: 0;
-    margin: 0;
     overflow: hidden;
-    z-index: 1;
-    border-bottom: 3px solid #ffffff;}
-.bannerclass img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.featured-section {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    min-height: 100px;
-    background-color: #241638;
-    padding: 10px;
     border-bottom: 4px solid #8000a8;
 }
-.featured-section h2,
-.featured-section p {
+.bannerclass img {
+    grid-column: 1;
+    width: 100%;
+    height: 430px;
+    grid-row: 1;
+    object-fit: cover;
+    background-color: #1d3557
+}
+.bannertext {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    z-index: 1;
+   
+   
+    
+}
+
+.bannertext h1 {
+    font-size: 42px;
+    margin: 0 0 10px;
+    text-shadow: 3px 3px 5px #000000;
+}
+.bannertext p {
+    max-width: 650px;
+    font-size: 18px;
+    margin: 0 0 25px;
+    color: #008cff;
+    -webkit-text-stroke:
+    font-size: 20px;
+    text-shadow: 5px 3px 5px #000000;
+}
+
+.banner-button {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #7209b7;
     color: #ffffff;
-    -webkit-text-stroke: 0.5px #008cff;
+    text-decoration: none;
+    border: 1px solid #c77dff;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px
+}
+.banner-button:hover {
+    background-color: #008cff;
+}
+.featured-games {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px 15px 20px;
+    background-color: #1d3557
+}
+.featured-games h2 {
+    font-size: 30px;
+    margin: 0 0 5px;
+    color: #ffffff;
+    -webkit-text-stroke: 1px #008cff
+}
+.featured-games p {
+    margin: 0;
+    color: #c9b8dd;
+    -webkit-text-stroke: 0.4px #ffffff
+    
 }
 .featured-content {
-    grid-column: 1 / -1;
-    grid-row: 4;
+    grid-column: 1 /-1;
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0;
-    row-gap: 0;
+    grid-template-columns: repeat(3, minmax (0, 1fr));
+    gap: 25px;
+    padding: 20px 30px 45px;
+    background-color: #1d3557;
 }
-.game-info-one,
-.game-info-two {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 15px;
-    margin: 0;
-    background-color: #241638
-}
-.game-picture-one {
-    grid-column: 1 / 4;
+.game-cards,
+.game-cards2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 500px;
     min-width: 0;
-    height: 250px;
-    background-color: #241638;
-    padding: 8px;
+    background-color: #321c49;
+    border: 1px solid #008cff;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 5px 12px #000000;
 }
-.game-picture-one img {
+.game-cards img,
+.game-cards2 img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
-    box-shadow: 5px 5px 5px #000000;
-    border-bottom: 10px solid #8000a8
+    border-bottom: 4px solid #8000a8;
 }
-.game-description-one { grid-column: 4 / 7;
-    min-height: 200px;
-    background-color: #241638;
-    padding: 10px;
-    font-size: x-large;
+.game-card-info1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 18px;
 }
-.game-description-one p {-webkit-text-stroke: 0.5px #000000;
+.game-card-info1 h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #008cff
 }
-.game-description-one h2 {-webkit-text-stroke: 0.5px #008cff;
-}
-.game-description-two {
-    grid-column: 1 / 4;
-    min-height: 200px;
-    background-color: #241638;
-    padding: 10px;
-    font-size: x-large;
+.game-card-info1 p {
+    color: #d5c7e2;
+    margin: 0 0 20px;
 }
 
-.game-description-two h2 {-webkit-text-stroke: 0.5px #008cff
+.game-card-info2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 18px;
 }
-.game-description-two p {-webkit-text-stroke: 0.5px #000000}
-.game-picture-two {
-    grid-column: 4 / 7;
-    min-width: 0;
-    height: 250px;
-    padding: 10px;
-    font-size: x-large;
+
+.game-card-info2 h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #008cff
 }
-.game-picture-two img {
-    display: block;
+.game-card-info2 p{
+    color: #d5c7e2;
+    margin: 0 0 20px;
+}
+.card-button {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #008cff;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #8000a8;
+    border-radius: 30px;
+    font-weight: bold;
+    align-items: center;
+
+
+}
+
+.card-button:hover {
+background-color: #1d3557
+}
+.game-card-more {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: -5px 5px 5px #000000;
-    border-bottom: 10px solid #8000a8;
+    background-color: #321c49;
+    min-width: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    min-height: 320px;
+    border: 1px solid #008cff;
+    box-shadow: 0 5px 12px #000000;
+    font-size: 18px;
+}
+
+.card-more-text {
+    padding: 25px;
+}
+
+.card-more-text h2 {
+    display: inline-block;
+}
+.see-more {
+    display: inline-block;
+    padding: 15px 50px;
+    background-color: #008cff;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 15px;
+    
+}
+.see-more:hover {
+    background-color: #1d3557;
 }
 .find-yours-now {
-    grid-column: 1 / -1;
-    grid-row: 5;
-    min-height: 150px;
-    background-color: #241638;
-    padding: 20px;
+    background-color: #8000a8;
     text-align: center;
-}
-.find-yours-now h2 {-webkit-text-stroke: 0.5px #008cff
-}
-.button-placeholder {
-    display: inline-block;
-    background-color: #7209b7;
-    color: white;
-    padding: 20px 50px;
-    border-radius: 200px;
-}
-.button-placeholder:hover {background-color: #008cff;}
 
+}
+.bottom-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #008cff;
+    color: #ffffff;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.bottom-button:hover {
+background-color: #1d3557
+}
 .watermark {
-    grid-column: 1 / -1;
-    grid-row: 6;
-    min-height: 60px;
-    background-color: rgba(155, 93, 229, 0.4);
-    padding: 10px;
+    margin-top: 10px;
+}
+.find-yours-now p {
+font-size: 18px;
 }
