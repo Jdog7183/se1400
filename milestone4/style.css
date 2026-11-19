@@ -31,7 +31,8 @@ html, body {
     background-color: #299b27;
     border: 1px solid #000000;
     min-height: 65px;
-    text-align: center
+    text-align: center;
+    width: 100%;
 }
 .game-card1 {
     grid-column: 2 / 5;
@@ -39,7 +40,8 @@ html, body {
     background-color: #6519b5;
     border: 1px solid #000000;
     min-height: 350px;
-    text-align: center
+    text-align: center;
+    width: 100%;
 }
 .game-card2 {
     grid-column: 5 / 8;
@@ -48,6 +50,7 @@ html, body {
     border: 1px solid #000000;
     min-height: 350px;
     text-align: center;
+    width: 100%;
 }
 .bottom-card {
     grid-column: 2 / 8;
@@ -55,4 +58,5 @@ html, body {
     border: 1px solid #000000;
     min-height: 120px;
     text-align: center;
+    width: 100%;
 }
