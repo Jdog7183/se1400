@@ -67,7 +67,7 @@ html, body {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 180px;
+    grid-template-rows: 350px;
     overflow: hidden;
     border-bottom: 2px solid #008cff;
     overflow: hidden;
@@ -158,6 +158,7 @@ text-align: center;
     margin: 0 8px 0 20px;
     text-align: center;
     overflow: hidden;
+    min-height: 350px;
 }
 
 .game-card2 {
@@ -172,6 +173,7 @@ text-align: center;
     margin: 0 20px 0 8px;
     text-align: center;
     overflow: hidden;
+    min-height: 350px;
 }
     .game-card1 img,
     .game-card2 img {
@@ -196,10 +198,11 @@ text-align: center;
     }
     .game-card1 p,
     .game-card2 p {
-        font-size: 14px;
-        line-height: 1.2;
-        margin: 0 0 8px;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 10px 0;
         flex-grow: 1;
+        -webkit-text-stroke: 0.4px #000000;
     }
 
     .game-card1 .button,
