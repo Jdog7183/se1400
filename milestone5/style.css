@@ -202,7 +202,7 @@ text-align: center;
         line-height: 1.6;
         margin: 10px 0;
         flex-grow: 1;
-        -webkit-text-stroke: 0.4px #000000;
+        -webkit-text-stroke: 0.3px #000000;
     }
 
     .game-card1 .button,
