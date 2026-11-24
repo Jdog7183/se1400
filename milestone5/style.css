@@ -40,7 +40,7 @@ html, body {
     font-size: 18px;
     white-space: nowrap;
     font-size: 20px;
-    -webkit-text-stroke: .5px black;
+    -webkit-text-stroke: 0.7px black;
 }
 
 .nav-class {
