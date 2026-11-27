@@ -309,8 +309,12 @@ text-align: center;
 
         .bottom-card button {
             min-width; 0;
+            width: 90%;
             max-width: 100%;
+            padding: 15px 20px;
             box-sizing: border-box;
+            margin: 0 auto;
+            display: block;
         }
 
         .game-card p,
