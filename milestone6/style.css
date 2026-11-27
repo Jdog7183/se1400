@@ -244,12 +244,13 @@ text-align: center;
 
        .header-class {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 5px 20px;
        } 
        
        .nav-class {
-        justify-content: center;
-        gap: 15px;
+        justify-content: flex-end;
+        gap: 25px;
        }
     }
 
