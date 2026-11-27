@@ -252,7 +252,7 @@ text-align: center;
        }
     }
 
-    @media (width: 768px) {
+    @media (max-width: 768px) {
         .full-grid {
             grid-template-columns: repeat(6, minmax(0, 1fr));
         }
@@ -278,8 +278,8 @@ text-align: center;
             min-height: auto;
         }
 
-        .game-card1,
-        .game-card2 {
+        .game-card1 img,
+        .game-card2 img {
             width: 100%;
             height: 180px;
             object-fit: cover;
@@ -308,7 +308,7 @@ text-align: center;
         }
 
         .bottom-card .button {
-            min-width; 0;
+            min-width: 0;
             width: 90%;
             max-width: 100%;
             padding: 15px 20px;
